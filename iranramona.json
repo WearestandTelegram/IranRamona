@@ -1,0 +1,1013 @@
+
+{
+    "log": {
+      "level": "warn",
+      "timestamp": true
+    },
+    "dns": {
+      "servers": [
+        {
+          "tag": "dns_proxy",
+          "address": "https://1.1.1.1/dns-query",
+          "address_resolver": "dns_direct",
+          "strategy": "prefer_ipv4",
+          "detour": "اعتراضات سراسری"
+        },
+        {
+          "tag": "dns_proxy_ipv4",
+          "address": "https://1.1.1.1/dns-query",
+          "address_resolver": "dns_direct",
+          "strategy": "ipv4_only",
+          "detour": "اعتراضات سراسری"
+        },
+        {
+          "tag": "dns_direct",
+          "address": "local",
+          "strategy": "prefer_ipv4",
+          "detour": "اعتراضات سراسری"
+        },
+        {
+          "tag": "dns_block",
+          "address": "rcode://success"
+        }
+      ],
+      "rules": [
+        {
+          "outbound": "any",
+          "server": "dns_direct"
+        }
+
+
+      ],
+      "final": "dns_proxy",
+      "independent_cache": true
+    },
+    "ntp": {
+      "enabled": true,
+      "server": "ir.pool.ntp.org",
+      "server_port": 123,
+      "detour": "direct"
+    },
+    "inbounds": [
+      {
+      "type": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 20122,
+      "sniff": true,
+      "sniff_override_destination": true,
+      "domain_strategy": "ipv4_only",
+      "tcp_fast_open": false,
+      "tcp_multi_path": false,
+      "udp_fragment": true
+    },
+    {
+      "type": "http",
+      "listen": "127.0.0.1",
+      "listen_port": 8181,
+      "sniff": true,
+      "sniff_override_destination": true,
+      "domain_strategy": "ipv4_only",
+      "tcp_fast_open": false,
+      "tcp_multi_path": false,
+      "udp_fragment": true
+    },
+    {
+      "type": "socks",
+      "listen": "127.0.0.1",
+      "listen_port": 8080,
+      "sniff": true,
+      "sniff_override_destination": true,
+      "domain_strategy": "ipv4_only",
+      "tcp_fast_open": false,
+      "tcp_multi_path": false,
+      "udp_fragment": true
+    },
+    {
+      "type": "tun",
+     "address": [
+        "172.19.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": false,
+      "stack": "mixed",
+      "platform": {
+        "http_proxy": {
+          "enabled": true,
+          "server": "127.0.0.1",
+          "server_port": 20122
+        }
+      },
+      "sniff": true,
+      "sniff_override_destination": true,
+      "domain_strategy": "ipv4_only"
+    }
+
+    ],
+     "outbounds": [
+{
+        "type": "selector",
+        "tag": "منصوره سگوند مهسا موگویی",
+        "outbounds": [
+          "اعتراضات سراسری",
+          "اعتراضات سراسری"
+
+
+        ],
+        "default": "اعتراضات سراسری",
+        "interrupt_exist_connections": true
+      },
+
+   {
+        "type": "selector",
+        "tag": "نیکا شاکرمی مهسا امینی",
+        "outbounds": [
+          "اعتراضات سراسری",
+          "اعتراضات سراسری"
+
+
+        ],
+        "default": "اعتراضات سراسری",
+        "interrupt_exist_connections": true
+      },
+        {
+            "tag": "رضا شاه روحت شاد",
+            "type": "selector",
+            "outbounds": [
+                "اعتراضات سراسری",
+                "یلدا اقافضلی",
+"محسن شکاری",
+"حمیدرضا روحی",
+"محمدحسین کمندلو",
+"علیرضا خوشکار بیاتی",
+"میلاد استاد هاشم",
+"عرفان نظربیگی",
+"مهدی حسنی",
+"غزاله قاسمی",
+"سیدعلی سیدی",
+"میلاد جاویدپور",
+"سیاوش محمودی",
+"فرانک جباری",
+"علی روزبهانی",
+"لینا نامور",
+"فرزین معروفی",
+"احسان خان محمدی",
+"مریم اسمعیل زاده",
+"ابوالفضل امیرعطایی",
+"عاطفه صادقی",
+"ستاره تاجیک",
+"امین خانلو",
+"کیانا آتش زر",
+"کیمیا مقدسی",
+"حدیث نجفی",
+"سپهر اعظمی",
+"نیما نوری",
+"محمد جامه",
+"ساناز کشاورز",
+"پرستو مرادخانی"
+
+
+            ]
+        },
+
+{
+            "tag": "اعتراضات سراسری",
+            "type": "urltest",
+            "outbounds": [
+
+             "یلدا اقافضلی",
+"محسن شکاری",
+"حمیدرضا روحی",
+"محمدحسین کمندلو",
+"علیرضا خوشکار بیاتی",
+"میلاد استاد هاشم",
+"عرفان نظربیگی",
+"مهدی حسنی",
+"غزاله قاسمی",
+"سیدعلی سیدی",
+"میلاد جاویدپور",
+"سیاوش محمودی",
+"فرانک جباری",
+"علی روزبهانی",
+"لینا نامور",
+"فرزین معروفی",
+"احسان خان محمدی",
+"مریم اسمعیل زاده",
+"ابوالفضل امیرعطایی",
+"عاطفه صادقی",
+"ستاره تاجیک",
+"امین خانلو",
+"کیانا آتش زر",
+"کیمیا مقدسی",
+"حدیث نجفی",
+"سپهر اعظمی",
+"نیما نوری",
+"محمد جامه",
+"ساناز کشاورز",
+"پرستو مرادخانی"
+
+
+
+      ],
+      "url": "http://cp.cloudflare.com",
+      "interval": "10m0s"
+
+    },
+
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "188.213.34.50",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "یلدا اقافضلی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "188.213.34.58",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "محسن شکاری",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+            
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "195.206.105.52",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "حمیدرضا روحی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "195.206.105.2",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "محمدحسین کمندلو",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "185.236.201.210",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "علیرضا خوشکار بیاتی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "195.206.105.17",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "میلاد استاد هاشم",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "195.206.105.42",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "عرفان نظربیگی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "185.191.204.154",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "مهدی حسنی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "185.191.204.155",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "غزاله قاسمی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "165.73.242.106",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "سیدعلی سیدی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "165.73.242.98",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "میلاد جاویدپور",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "37.120.153.77",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "سیاوش محمودی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+            
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "185.247.69.130",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "فرانک جباری",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "185.247.69.2",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "علی روزبهانی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "185.247.69.66",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "لینا نامور",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "185.247.69.194",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "فرزین معروفی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "139.28.217.210",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "احسان خان محمدی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "86.106.20.98",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "مریم اسمعیل زاده",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "77.243.189.194",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "ابوالفضل امیرعطایی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "37.120.153.22",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "عاطفه صادقی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "64.44.83.130",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "ستاره تاجیک",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "91.132.197.186",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "امین خانلو",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+            
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "91.132.197.192",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "کیانا آتش زر",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "91.132.197.188",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "کیمیا مقدسی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "93.177.75.90",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "حدیث نجفی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "93.177.75.106",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "سپهر اعظمی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "93.177.75.66",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "نیما نوری",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "64.44.83.138",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "محمد جامه",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "37.120.153.27",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "ساناز کشاورز",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+{
+            "headers": {
+                "Host": [
+                    "marilynmanson.link"
+                ]
+            },
+            "password": "79jD19d7O663D8f",
+            "path": "",
+            "server": "37.120.153.12",
+            "server_port": 7070,
+            "domain_strategy": "",
+            "tag": "پرستو مرادخانی",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "stream.meet.google.com"
+            },
+            "type": "http",
+            "username": "z56apfd7b281b9i"
+        },
+
+        {
+      "type": "direct",
+      "tag": "direct"
+    },
+
+
+  ],
+    "route": {
+     "rules": [
+      {
+        "inbound": "tun-in",
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "رضا شاه روحت شاد"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "network": "tcp",
+        "port": 853,
+        "action": "reject",
+        "method": "default"
+      },
+      {
+        "network": "udp",
+        "port": 443,
+        "action": "reject",
+        "method": "default"
+      },
+
+      {
+        "inbound": "tun-in",
+        "action": "resolve"
+      },
+
+      {
+        "ip_cidr": "10.10.34.0/24",
+        "outbound": "رضا شاه روحت شاد"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+
+
+
+    ],
+      "final": "اعتراضات سراسری",
+      "auto_detect_interface": true,
+      "override_android_vpn": true
+    },
+    "experimental": {
+      "cache_file": {
+        "enabled": true,
+        "path": "cache.db",
+        "store_fakeip": true
+      },
+      "clash_api": {
+        "default_mode": "@Wearestand 👈🏻کانال تلگرام"
+      }
+    }
+  }
