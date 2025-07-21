@@ -128,14 +128,25 @@
                 "🇨🇦 T.ME/wearestand",
                 "🇨🇾 T.ME/iranramona",
                 "🇬🇪 T.ME/wearestand",
-                "🇧🇴 T.ME/iranramona",
+                "🇦🇫 T.ME/iranramona",
                 "🇭🇳 T.ME/wearestand",
                 "🇩🇪 T.ME/wearestand",
                 "🇮🇹 T.ME/wearestand",
                 "🇩🇰 T.ME/iranramona",
                 "🇺🇸 T.ME/wearestand",
                 "🇫🇷 T.ME/iranramona",
-                "🇪🇪 T.ME/wearestand"
+                "🇪🇪 T.ME/wearestand",
+                "🇺🇿 T.ME/iranramona",
+                "🇦🇲 T.ME/wearestand",
+                "🇬🇧 T.ME/iranramona",
+                "🇹🇷 T.ME/wearestand",
+                "🇪🇸 T.ME/wearestand",
+                "🇨🇭 T.ME/wearestand",
+                "🇰🇼 T.ME/iranramona",
+                "🇸🇬 T.ME/wearestand",
+                "🇮🇶 T.ME/iranramona",
+                "🇦🇿 T.ME/wearestand",
+                "🇳🇵 T.ME/iranramona"
              
             ]
         },
@@ -149,14 +160,25 @@
                 "🇨🇦CANADA",
                 "🇨🇾CYPRUS",
                 "🇬🇪GEORGIA",
-                "🇧🇴BOLIVIA",
+                "🇦🇫AFGHANISTAN",
                 "🇭🇳HONDURAS",
                 "🇩🇪GERMANY",
                 "🇮🇹ITALY",
                 "🇩🇰DENMARK",
                 "🇺🇸UNITED STATES",
                 "🇫🇷FRANCE",
-                "🇪🇪ESTONIA"
+                "🇪🇪ESTONIA",
+                "🇺🇿UZBEKISTAN",
+                "🇦🇲ARMENIA",
+                "🇬🇧UK",
+                "🇹🇷TURKEY",
+                "🇪🇸SPAIN",
+                "🇨🇭SWITZERLAND",
+                "🇰🇼KUWAIT",
+                "🇸🇬SINGAPORE",
+                "🇮🇶IRAQ",
+                "🇦🇿AZERBAIJAN",
+                "🇳🇵NEPAL"
                 
   
             ]
@@ -192,10 +214,10 @@
             ]
         },
 {
-            "tag": "🇧🇴 T.ME/iranramona",
+            "tag": "🇦🇫 T.ME/iranramona",
             "type": "urltest",
             "outbounds": [
-                "🇧🇴BOLIVIA"
+                "🇦🇫AFGHANISTAN"
 
 
             ]
@@ -268,6 +290,116 @@
             "outbounds": [
                 "🇪🇪ESTONIA"
                 
+
+
+            ]
+        },
+{
+            "tag": "🇺🇿 T.ME/iranramona",
+            "type": "urltest",
+            "outbounds": [
+               "🇺🇿UZBEKISTAN"
+
+
+            ]
+        },
+
+{
+            "tag": "🇦🇲 T.ME/wearestand",
+            "type": "urltest",
+            "outbounds": [
+                "🇦🇲ARMENIA"
+
+
+
+            ]
+        },
+{
+            "tag": "🇬🇧 T.ME/iranramona",
+            "type": "urltest",
+            "outbounds": [
+                "🇬🇧UK"
+
+
+            ]
+        },
+{
+            "tag": "🇹🇷 T.ME/wearestand",
+            "type": "urltest",
+            "outbounds": [
+                "🇹🇷TURKEY"
+ 
+
+            ]
+        },
+
+{
+            "tag": "🇪🇸 T.ME/wearestand",
+            "type": "urltest",
+            "outbounds": [
+                "🇪🇸SPAIN"
+           
+
+
+            ]
+        },
+
+
+{
+            "tag": "🇨🇭 T.ME/wearestand",
+            "type": "urltest",
+            "outbounds": [
+                "🇨🇭SWITZERLAND"
+
+
+            ]
+        },
+{
+            "tag": "🇰🇼 T.ME/iranramona",
+            "type": "urltest",
+            "outbounds": [
+                "🇰🇼KUWAIT"
+
+
+            ]
+        },
+
+
+{
+            "tag": "🇸🇬 T.ME/wearestand",
+            "type": "urltest",
+            "outbounds": [
+                "🇸🇬SINGAPORE"
+                
+
+
+            ]
+        },
+{
+            "tag": "🇮🇶 T.ME/iranramona",
+            "type": "urltest",
+            "outbounds": [
+                "🇮🇶IRAQ"
+
+
+            ]
+        },
+
+{
+            "tag": "🇦🇿 T.ME/wearestand",
+            "type": "urltest",
+            "outbounds": [
+                "🇦🇿AZERBAIJAN"
+                
+
+
+            ]
+        },
+{
+            "tag": "🇳🇵 T.ME/iranramona",
+            "type": "urltest",
+            "outbounds": [
+                "🇳🇵NEPAL"
 
 
             ]
@@ -358,10 +490,10 @@
             },
             "password": "mvgojzp3aSXrWgD9AfyeLWMN",
             "path": "",
-            "server": "[::ffff:2d86:bd03]",
+            "server": "[195.242.241.1]",
             "server_port": 90,
             "domain_strategy": "",
-            "tag": "🇧🇴BOLIVIA",
+            "tag": "🇦🇫AFGHANISTAN",
             "tls": {
                 "alpn": [
                     "h2,http/1.1"
@@ -559,6 +691,281 @@
             },
             "type": "http",
             "username": "XWYvRVwmMgwTMhB2LVwAkWAW"
+        },
+{
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "9wsoZE6cnV8tdxPdCRMsAB1s",
+            "path": "",
+            "server": "212.97.64.3",
+            "server_port": 89,
+            "domain_strategy": "",
+            "tag": "🇺🇿UZBEKISTAN",
+            "tls": {
+            "alpn": [
+            "h2,http/1.1"
+            ],
+            "disable_sni": false,
+            "enabled": true,
+            "insecure": true,
+
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "gjhvPNWRp1or2PbMyeHiQePb"
+        },
+{
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "9wsoZE6cnV8tdxPdCRMsAB1s",
+            "path": "",
+            "server": "45.137.78.1",
+            "server_port": 90,
+            "domain_strategy": "",
+            "tag": "🇦🇲ARMENIA",
+            "tls": {
+            "alpn": [
+            "h2,http/1.1"
+            ],
+            "disable_sni": false,
+            "enabled": true,
+            "insecure": true,
+
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "gjhvPNWRp1or2PbMyeHiQePb"
+        },
+{
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "9wsoZE6cnV8tdxPdCRMsAB1s",
+            "path": "",
+            "server": "103.214.46.146",
+            "server_port": 89,
+            "domain_strategy": "",
+            "tag": "🇬🇧UK",
+            "tls": {
+            "alpn": [
+            "h2,http/1.1"
+            ],
+            "disable_sni": false,
+            "enabled": true,
+            "insecure": true,
+
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "gjhvPNWRp1or2PbMyeHiQePb"
+        },
+{
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "9wsoZE6cnV8tdxPdCRMsAB1s",
+            "path": "",
+            "server": "87.249.139.86",
+            "server_port": 89,
+            "domain_strategy": "",
+            "tag": "🇹🇷TURKEY",
+            "tls": {
+            "alpn": [
+            "h2,http/1.1"
+            ],
+            "disable_sni": false,
+            "enabled": true,
+            "insecure": true,
+
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "gjhvPNWRp1or2PbMyeHiQePb"
+        },
+{
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "9wsoZE6cnV8tdxPdCRMsAB1s",
+            "path": "",
+            "server": "185.214.97.102",
+            "server_port": 89,
+            "domain_strategy": "",
+            "tag": "🇪🇸SPAIN",
+            "tls": {
+            "alpn": [
+            "h2,http/1.1"
+            ],
+            "disable_sni": false,
+            "enabled": true,
+            "insecure": true,
+
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "gjhvPNWRp1or2PbMyeHiQePb"
+        },
+{
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "9wsoZE6cnV8tdxPdCRMsAB1s",
+            "path": "",
+            "server": "178.239.165.24",
+            "server_port": 89,
+            "domain_strategy": "",
+            "tag": "🇨🇭SWITZERLAND",
+            "tls": {
+            "alpn": [
+            "h2,http/1.1"
+            ],
+            "disable_sni": false,
+            "enabled": true,
+            "insecure": true,
+
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "gjhvPNWRp1or2PbMyeHiQePb"
+        },
+{
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "9wsoZE6cnV8tdxPdCRMsAB1s",
+            "path": "",
+            "server": "212.32.84.21",
+            "server_port": 89,
+            "domain_strategy": "",
+            "tag": "🇰🇼KUWAIT",
+            "tls": {
+            "alpn": [
+            "h2,http/1.1"
+            ],
+            "disable_sni": false,
+            "enabled": true,
+            "insecure": true,
+
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "gjhvPNWRp1or2PbMyeHiQePb"
+        },
+{
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "9wsoZE6cnV8tdxPdCRMsAB1s",
+            "path": "",
+            "server": "84.17.39.197",
+            "server_port": 89,
+            "domain_strategy": "",
+            "tag": "🇸🇬SINGAPORE",
+            "tls": {
+            "alpn": [
+            "h2,http/1.1"
+            ],
+            "disable_sni": false,
+            "enabled": true,
+            "insecure": true,
+
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "gjhvPNWRp1or2PbMyeHiQePb"
+        },
+{
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "9wsoZE6cnV8tdxPdCRMsAB1s",
+            "path": "",
+            "server": "212.32.82.1",
+            "server_port": 89,
+            "domain_strategy": "",
+            "tag": "🇮🇶IRAQ",
+            "tls": {
+            "alpn": [
+            "h2,http/1.1"
+            ],
+            "disable_sni": false,
+            "enabled": true,
+            "insecure": true,
+
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "gjhvPNWRp1or2PbMyeHiQePb"
+        },
+{
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "9wsoZE6cnV8tdxPdCRMsAB1s",
+            "path": "",
+            "server": "45.137.79.1",
+            "server_port": 89,
+            "domain_strategy": "",
+            "tag": "🇦🇿AZERBAIJAN",
+            "tls": {
+            "alpn": [
+            "h2,http/1.1"
+            ],
+            "disable_sni": false,
+            "enabled": true,
+            "insecure": true,
+
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "gjhvPNWRp1or2PbMyeHiQePb"
+        },
+{
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "9wsoZE6cnV8tdxPdCRMsAB1s",
+            "path": "",
+            "server": "82.197.77.3",
+            "server_port": 89,
+            "domain_strategy": "",
+            "tag": "🇳🇵NEPAL",
+            "tls": {
+            "alpn": [
+            "h2,http/1.1"
+            ],
+            "disable_sni": false,
+            "enabled": true,
+            "insecure": true,
+
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "gjhvPNWRp1or2PbMyeHiQePb"
         },
 
 
